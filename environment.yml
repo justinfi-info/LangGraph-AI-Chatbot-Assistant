@@ -1,0 +1,26 @@
+name: ai_agent_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # Core scientific stack with compatible versions
+  - numpy=1.26.4
+  - scipy=1.11.4
+  - numba=0.59.1
+  - daal=2021.4.0
+  - daal4py=2021.5.0
+
+  # Optional tools
+  - jupyter
+
+  # Pip dependencies (external packages not in conda)
+  - pip
+  - pip:
+      - langchain
+      - langchain-groq
+      - langchain-openai
+      - langchain-community
+      - tavily-search
+      - python-dotenv

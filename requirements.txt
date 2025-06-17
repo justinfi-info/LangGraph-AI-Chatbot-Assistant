@@ -1,0 +1,21 @@
+# Core LangChain dependencies
+langchain
+langchain-groq
+langchain-openai
+langchain-community
+
+# Search tool integration
+tavily-search  # (Tavily backend may already be included via langchain-community)
+
+# Core dependencies
+python-dotenv
+
+# Specific model & tool compatibility
+numpy==1.21.6
+scipy==1.7.3
+numba==0.55.1
+daal==2021.4.0
+daal4py==2021.5.0
+
+# Optional: Jupyter or debugging tools
+jupyter
